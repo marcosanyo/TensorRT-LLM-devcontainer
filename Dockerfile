@@ -5,7 +5,7 @@ FROM nvidia/cuda:12.1.0-devel-ubuntu22.04
 
 # apt
 RUN apt-get update && \
-    apt-get install -y python3.10 python3-pip openmpi-bin libopenmpi-dev && \
+    apt-get install -y python3.10 python3-pip openmpi-bin libopenmpi-dev git git-lfs && \
     rm -rf /var/lib/apt/lists/*
 
 # pip
